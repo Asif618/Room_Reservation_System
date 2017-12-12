@@ -1,0 +1,42 @@
+﻿@model RoomApplying.Models.RoomInformation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RoomInformation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Room_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Room_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Room_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Room_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Confirm_Room)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Confirm_Room)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

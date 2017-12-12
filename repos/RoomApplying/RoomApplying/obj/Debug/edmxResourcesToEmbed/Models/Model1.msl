@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectModelStoreContainer" CdmEntityContainer="ProjectEntities2">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="ProjectModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoomInformations">
+      <EntityTypeMapping TypeName="ProjectModel.RoomInformation">
+        <MappingFragment StoreEntitySet="RoomInformation">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Room_Name" ColumnName="Room_Name" />
+          <ScalarProperty Name="Room_No" ColumnName="Room_No" />
+          <ScalarProperty Name="Confirm_Room" ColumnName="Confirm_Room" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfoes">
+      <EntityTypeMapping TypeName="ProjectModel.UserInfo">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Room_Name" ColumnName="Room_Name" />
+          <ScalarProperty Name="Room_No" ColumnName="Room_No" />
+          <ScalarProperty Name="Start_Date" ColumnName="Start_Date" />
+          <ScalarProperty Name="Finish_Date" ColumnName="Finish_Date" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
